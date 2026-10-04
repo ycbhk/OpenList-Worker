@@ -2,7 +2,6 @@ import assert from "node:assert/strict"
 import { test } from "node:test"
 import {
   DB_CIPHER_VALUES,
-  type DbCipher,
   cipherPrefix,
   createFieldCipher,
   deriveConfigEncryptionKey,
@@ -11,7 +10,6 @@ import {
   encryptConfigValue,
   isSealedCiphertext,
   resolveDbCipher,
-  type DbCipher,
 } from "../../pkg/crypto"
 import { readCipher } from "./store/backend"
 import { memoryDriver } from "./store/driver/memory"
